@@ -14,7 +14,7 @@ namespace IS1_20_BabushkinDK
     public partial class Authh : MetroFramework.Forms.MetroForm
     {
         // строка подключения к БД
-        string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_2;database=is_1_20st2_KURS;password=34354559;";
+        string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_2;database=is_1_20_st2_KURS;password=34354559;";
         //Переменная соединения
         MySqlConnection conn;
         //Логин и пароль к данной форме Вы сможете посмотреть в БД db_test таблице t_user
@@ -27,7 +27,7 @@ namespace IS1_20_BabushkinDK
         static string sha256(string randomString)
         {
             //Тут происходит криптографическая магия. Смысл данного метода заключается в том, что строка залетает в метод
-            var crypt = new System.Security.Cryptography.SHA256Managed();    
+            var crypt = new System.Security.Cryptography.SHA256Managed();
             var hash = new System.Text.StringBuilder();
             byte[] crypto = crypt.ComputeHash(Encoding.UTF8.GetBytes(randomString));
             foreach (byte theByte in crypto)
@@ -44,7 +44,7 @@ namespace IS1_20_BabushkinDK
             // устанавливаем соединение с БД
             conn.Open();
             // запрос
-            string sql = $"SELECT * FROM t_user WHERE loginUser='{login_user}'";
+            string sql = $"SELECT fio_empl, email_empl, id_empl, login FROM T_Empl WHERE login='{login_user}'";
             // объект для выполнения SQL-запроса
             MySqlCommand command = new MySqlCommand(sql, conn);
             // объект для чтения ответа сервера
@@ -55,8 +55,8 @@ namespace IS1_20_BabushkinDK
                 // элементы массива [] - это значения столбцов из запроса SELECT
                 Auth.auth_id = reader[0].ToString();
                 Auth.auth_fio = reader[1].ToString();
-                Auth.auth_role = Convert.ToInt32(reader[4].ToString());
-            }    
+                //Auth.auth_role = Convert.ToInt32(reader[4].ToString());
+            }
             reader.Close(); // закрываем reader
             // закрываем соединение с БД
             conn.Close();
@@ -64,7 +64,7 @@ namespace IS1_20_BabushkinDK
         private void metroButton1_Click(object sender, EventArgs e)
         {
             //Запрос в БД на предмет того, если ли строка с подходящим логином и паролем
-            string sql = "SELECT * FROM t_user WHERE loginUser = @un and  passUser= @up";
+            string sql = "SELECT * FROM T_Empl WHERE login = @un and password= @up";
             //Открытие соединения
             conn.Open();
             //Объявляем таблицу
@@ -101,6 +101,16 @@ namespace IS1_20_BabushkinDK
                 MessageBox.Show("Неверные данные авторизации!");
             }
         }
+
+        private void Authh_Load(object sender, EventArgs e)
+        {
+            conn = new MySqlConnection(connStr);
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
-    }
+}
 

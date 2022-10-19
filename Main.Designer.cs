@@ -35,20 +35,28 @@ namespace IS1_20_BabushkinDK
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(91, 114);
+            this.metroLabel1.BackColor = System.Drawing.Color.White;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.ForeColor = System.Drawing.Color.Red;
+            this.metroLabel1.Location = new System.Drawing.Point(106, 152);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(162, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(185, 19);
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Авторизация не удалась ";
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 308);
+            this.ClientSize = new System.Drawing.Size(415, 330);
             this.Controls.Add(this.metroLabel1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Main";
+            this.Padding = new System.Windows.Forms.Padding(30, 92, 30, 31);
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
