@@ -52,7 +52,7 @@ namespace IS1_20_BabushkinDK
             this.ClientSize = new System.Drawing.Size(415, 330);
             this.Controls.Add(this.metroLabel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
             this.Padding = new System.Windows.Forms.Padding(30, 92, 30, 31);
             this.Text = "Form1";

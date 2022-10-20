@@ -126,7 +126,7 @@ namespace IS1_20_BabushkinDK
             this.Controls.Add(this.metroTextBox2);
             this.Controls.Add(this.metroTextBox1);
             this.Name = "Authh";
-            this.Text = "Authh";
+            this.Text = "Авторизация";
             this.Load += new System.EventHandler(this.Authh_Load);
             this.ResumeLayout(false);
 

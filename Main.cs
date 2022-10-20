@@ -36,7 +36,7 @@ namespace IS1_20_BabushkinDK
                 metroLabel1.ForeColor = Color.GreenYellow;
                 metroLabel1.Text = Auth.auth_id;
                 metroLabel1.Text = Auth.auth_fio;
-                metroLabel1.Text = $"Привет, {Auth.auth_fio}";
+                metroLabel1.Text = $"Здравствуйте, {Auth.auth_id}";
                 //Красим текст в label в зелёный цвет
             }
             //иначе
