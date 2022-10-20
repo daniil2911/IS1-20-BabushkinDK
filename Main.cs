@@ -44,7 +44,7 @@ namespace IS1_20_BabushkinDK
             {
                 //Закрываем форму
                 this.Close();
-            }    
+            }
         }
     }
 }
