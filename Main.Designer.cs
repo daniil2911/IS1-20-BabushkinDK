@@ -38,7 +38,7 @@ namespace IS1_20_BabushkinDK
             this.metroLabel1.BackColor = System.Drawing.Color.White;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel1.ForeColor = System.Drawing.Color.Red;
-            this.metroLabel1.Location = new System.Drawing.Point(106, 152);
+            this.metroLabel1.Location = new System.Drawing.Point(125, 112);
             this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(185, 19);
