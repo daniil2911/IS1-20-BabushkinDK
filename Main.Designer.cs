@@ -30,7 +30,6 @@ namespace IS1_20_BabushkinDK
         private void InitializeComponent()
         {
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -46,21 +45,11 @@ namespace IS1_20_BabushkinDK
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Авторизация не удалась ";
             // 
-            // metroButton1
-            // 
-            this.metroButton1.Location = new System.Drawing.Point(34, 190);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 23);
-            this.metroButton1.TabIndex = 1;
-            this.metroButton1.Text = "metroButton1";
-            this.metroButton1.UseSelectable = true;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 307);
-            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -76,7 +65,6 @@ namespace IS1_20_BabushkinDK
         #endregion
 
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }
 
