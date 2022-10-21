@@ -108,7 +108,7 @@ namespace IS1_20_BabushkinDK
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(181, 160);
+            this.metroButton2.Location = new System.Drawing.Point(164, 160);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(91, 23);
             this.metroButton2.TabIndex = 3;
