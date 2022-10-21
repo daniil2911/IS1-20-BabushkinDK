@@ -44,7 +44,7 @@ namespace IS1_20_BabushkinDK
             // устанавливаем соединение с БД
             conn.Open();
             // запрос
-            string sql = $"SELECT fio_empl, email_empl, id_empl, login FROM T_Empl WHERE login='{login_user}'";
+            string sql = $"SELECT id_empl, fio_empl, email_empl, login FROM T_Empl WHERE login='{login_user}'";
             // объект для выполнения SQL-запроса
             MySqlCommand command = new MySqlCommand(sql, conn);
             // объект для чтения ответа сервера
